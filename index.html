@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT STYLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- ANIMATE CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- STYLE -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Kalkulator Matematik Segitiga</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <h1 class="animate__animated animate__backInDown">KALKULATOR MATEMATIK SEGITIGA</h1>
+    </nav>
+    <main>
+      <h2 class="animate__animated animate__backInDown">Selamat Datang di Web Kalkulator Matematik Segitiga</h2>
+      <h3 class="animate__animated animate__backInDown">Sebuah Web Apps yang berfungsi untuk menghitung luas dan keliling segitiga</h3>
+      <img src="./assets/segitiga-home.png" alt="Bangun Segitiga" class="animate__animated animate__backInDown">
+      <div class="operasi__container">
+        <form method="post" class="formLuas animate__animated animate__backInLeft">
+          <table class="tableLuas">
+            <thead class="thead">
+              <td colspan="4">Hitung Luas Segitiga</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alas</td>
+                <td>:</td>
+                <td colspan="2"><input id="alas" type="number"></td>
+              </tr>
+              <tr>
+                <td>Tinggi</td>
+                <td>:</td>
+                <td colspan="2"><input id="tinggi" type="number"></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td><button class="submitLuas" type="submit" onclick="hitungLuas();">Hitung</button></td>
+                <td><button class="resetLuas" type="reset" onclick="resetFormluas();">Reset</button></td>
+              </tr>
+        </form>
+              <tr>
+                <td>Hasil</td>
+                <td>:</td>
+                <td colspan="2"><input id="hasilLuas" type="number" readonly disabled></td>
+              </tr>
+              <tr>
+                <td class="kalmat" colspan="4" id="kalmatLuas"></td>
+              </tr>
+              <tr>
+                <td class="kalmat" colspan="4" id="penjabaranLuas"></td>
+              </tr>
+              <tr>
+                <td class="kalmat" colspan="4" id="kalLuas"></td>
+              </tr>
+            </tbody>
+          </table>
+    
+        <form method="post" class="formKeliling">
+          <table class="tableKeliling">
+            <thead class="thead">
+              <td colspan="4">Hitung Keliling Segitiga</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sisi alas</td>
+                <td>:</td>
+                <td colspan="2"><input id="sisi_alas" type="number"></td>
+              </tr>
+              <tr>
+                <td>Sisi miring 1</td>
+                <td>:</td>
+                <td colspan="2"><input id="miring1" type="number"></td>
+              </tr>
+              <tr>
+                <td>Sisi miring 2</td>
+                <td>:</td>
+                <td colspan="2"><input id="miring2" type="number"></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td><button class="submitKeliling" type="submit" onclick="hitungKeliling();">Hitung</button></td>
+                <td><button class="resetKeliling" type="reset" onclick="resetFormkeliling();">Reset</button></td>
+              </tr>
+        </form>
+              <tr>
+                <td>Hasil</td>
+                <td>:</td>
+                <td colspan="2"><input id="hasilKeliling" type="number" readonly disabled></td>
+              </tr>
+              <tr>
+                <td class="kalmat" colspan="4" id="kalmatKeliling"></td>
+              </tr>
+              <tr>
+                <td class="kalmat" colspan="4" id="penjabaranKeliling"></td>
+              </tr>
+              <tr>
+                <td class="kalmat" colspan="4" id="kalKeliling"></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </main>
+    <footer>
+      <p>Made with 💛 by <a href="https://www.instagram.com/reyvaldoshipra" target="_blank">Reyvaldo Shiva Pramudya</a></p>
+    </footer>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
